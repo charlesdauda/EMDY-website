@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E.M.D.Y</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="top-bar">
+      <span>0206793795 | emdynamicyouth@gmail.com</span>
+        <div class="top-right">
+        <input type="text" placeholder="Search..." id="searchInput">
+        <button onclick="searchSite()">Search</button>
+      </div>
+    </div>
+
+  <header class="site-header">
+  <div class="container header-inner">
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#whatwedo">What We Do</a>
+      <a href="#event">Event</a>
+      <a href="#getinvolved">Get Involved</a>
+      <a href="#resources">Our Resources</a>
+      <a href="#ourleaders">Our Leaders</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <!-- Main -->
+  <main id="home" class="main-section">
+    <div class="left-content">
+      <h1><span class="blue">ETHEREAN</span> </h1>
+      <h1><span class="black">MISSION</span> </h1>
+      <h2>DYNAMIC YOUTH</h2>
+      <p><em>COMMUNITY BUILDING AND TOGETHERNESS</em></p>
+      <a href="#" class="welcome-btn">WELCOME TO EMDY.</a>
+    </div>
+
+    <div class="right-logo">
+      <img src="emdylogo.png" alt="EMDY Logo">
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Etherean Mission Dynamic Youth.</p>
+  </footer>
+
+   <main id="about" class="about-wrap" aria-label="About us slides">
+   <h2 class="section-header about-header">About Us</h2>
+    <div class="viewport">
+      <div class="slider" id="slider">
+        <!-- Slide 1 -->
+        <section class="slide s1" aria-roledescription="slide" aria-label="About slide 1">
+          <div class="s1-inner">
+            <div class="s1-left">
+              <h1 class="title">
+                ABOUT<br/>
+                E.M DYNAMIC YOUTH
+              </h1>
+              <p class="subtitle">
+                From the English word ‘ethereal’ — meaning heaven — Etherean Mission is a Heavenly Mission anchored on earth.
+              </p>
+            </div>
+
+            <div class="s1-center">
+              <div class="ring-outer" aria-hidden="true">
+                <div class="ring-inner">
+                  <img src="emdylogo.png" alt="Lady praying" class="portrait">
+                </div>
+              </div>
+              <div class="decor-dot orange" aria-hidden="true"></div>
+            </div>
+
+            <div class="s1-right">
+              <div class="info-box">
+                <h2>ABOUT E.M DYNAMIC YOUTH</h2>
+                <p class="body">
+                  Etherean Mission Dynamic Youth is the vibrant youth wing of Etherean Mission (Heavenly Mission). We empower young people to live with purpose, creativity and spiritual awareness — awakening the divine potential in every young soul.
+                </p>
+
+                <div class="chev-pill" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" class="chev"><path d="M9 18l6-6-6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accent-blob" aria-hidden="true"></div>
+        </section>
+
+        <!-- Slide 2 -->
+        <section class="slide s2" aria-roledescription="slide" aria-label="About slide 2">
+          <div class="s2-inner">
+            <div class="s2-left">
+              <h2 class="bigstack">
+                ABOUT<br/>ETHEREAN<br/>MISSION<br/>DYNAMIC<br/>YOUTH
+              </h2>
+              <p class="lead-italic">
+                Our vision is that of a unified world in which everybody is a catalyst activating and promoting the innate good in one another.
+              </p>
+            </div>
+
+            <div class="s2-mid">
+              <div class="card mission">
+                <div class="card-badge">MISSION</div>
+                <ul>
+                  <li>Provide you with the Life Tools to unleash your innate God potentials for inner peace and world peace.</li>
+                  <li>Unite the Family of Humanity.</li>
+                  <li>Restore cultural Self-dignity and respect especially for African people.</li>
+                </ul>
+              </div>
+
+              <div class="card objectives">
+                <div class="card-badge small">OUR OBJECTIVES</div>
+                <ul>
+                  <li>To bring spiritual enlightenment and empowerment to humankind.</li>
+                  <li>To promote Oneness of Life.</li>
+                  <li>To restore the Mystical Traditions of Africa.</li>
+                </ul>
+              </div>
+
+              <div class="card prayer">
+                <div class="card-badge small-rose">OUR MASTER PRAYER</div>
+                <p class="prayer-text">
+                  Oh God, let the life I live today call forth your divine presence in everyone I meet in body, mind and spirit into full expression...
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- controls -->
+    <button class="arrow left" id="prevBtn" aria-label="Previous slide">
+      <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+    </button>
+
+    <button class="arrow right" id="nextBtn" aria-label="Next slide">
+      <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+    </button>
+
+    <!-- pagination dots -->
+    <div class="dots" role="tablist" aria-label="Slides pagination">
+      <button class="dot active" data-index="0" aria-label="Go to slide 1"></button>
+      <button class="dot" data-index="1" aria-label="Go to slide 2"></button>
+    </div>
+  </main>
+
+  <section id="whatwedo" class="section theme-whatwedo">
+    <h2 class="section-header">What We Do</h2>
+    <div class="container section-inner">
+      <p>We offer various programs and initiatives to empower youth.</p>
+    </div>
+  </section>
+
+  <section id="event" class="section theme-event">
+    <h2 class="section-header">Events</h2>
+    <div class="container section-inner">
+      <p>Join us at our upcoming events and workshops.</p>
+    </div>
+  </section>
+
+  <section id="getinvolved" class="section theme-getinvolved">
+    <h2 class="section-header">Get Involved</h2>
+    <div class="container section-inner">
+      <p>Volunteer, donate, or participate in our community programs.</p>
+    </div>
+  </section>
+
+  <section id="resources" class="section theme-resources">
+    <h2 class="section-header">Our Resources</h2>
+    <div class="container section-inner">
+      <p>Access free tools, articles, and learning materials.</p>
+    </div>
+  </section>
+
+  <section id="ourleaders" class="section theme-ourleaders">
+    <h2 class="section-header">Our Leaders</h2>
+    <div class="container section-inner">
+      <p>Meet the passionate leaders driving our mission forward.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section theme-contact">
+    <h2 class="section-header">Contact Us</h2>
+    <div class="container section-inner">
+      <p>Have questions? Get in touch with us here.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; Etherean Mission Dynamic Youth.</p>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
+
